@@ -1,1 +1,46 @@
 
+.navbar {
+    background-color: #96bd3a !important;
+    padding: 10px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    text-align: center;
+  }
+}
