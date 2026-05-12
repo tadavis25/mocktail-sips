@@ -24,14 +24,14 @@ searchForm.addEventListener('submit', function(event) {
             drinkResults.innerHTML = '';
             data.drinks.forEach(drink => {
                 drinkResults.innerHTML += `
-                    <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                    <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}" 
-                    class="card-img-top">
+                       <div class="col-md-4 mb-4">
+                     <div class="card h-100">
+                  <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}" 
+                class="card-img-top">
                      
                     <div class="card-body">
                       <h5>${drink.strDrink}</h5>
-                        <p>${drink.strInstructions.slice(0, 100)}...</p>
+                        <p>${drink.strInstructions.slice(0, 200)}...</p>
                         <p><strong>Glass:</strong> ${drink.strGlass}</p>
                           <p><strong>Category:</strong> ${drink.strCategory}</p>
 
