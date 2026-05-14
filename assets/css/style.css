@@ -97,3 +97,28 @@
 #search-form {
   margin-bottom: 2rem;
 }
+
+.feature-box {
+  background-color: #c7db63;
+  border-radius: 10px;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: #c7db63;
+  border-radius: 10px;
+  padding: 25px;
+  width: 400px;
+  text-align: center;
+}

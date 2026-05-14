@@ -75,36 +75,28 @@
     </section>
  
 <!-- Search Section -->
-    <section id="search" class="my-5">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="card-title">Search Cocktails</h3>
+  <div class="feature-container">
+    <section id="search" class="feature-box">
+      <h3 class="card-title">Search Cocktails</h3>
               <p class="card-text">Find your favorite cocktails by name, ingredient, or flavor profile.</p>
             <form id="search-form">
                     <input type="text" id="search-input" placeholder="Search cocktails by name or ingredient">
                     <button type="submit" class="btn btn-primary">Search</button>
             </form>
-          </div>
-        </div>
-      </div>
-            
-            <p id="error-message"></p>
-              <div id="drink-results" class="row">
-            </div>
-         </section>
+            </section>
 
-     <!-- Popular Drinks Section --> 
-      <section id="popular-drinks" class="my-5">
-       <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
+     <!-- Popular Drinks Section -->
+      <section id="popular-drinks" class="feature-box">
             <h3 class="card-title">Popular drinks</h3>
               <p class="card-text">Discover our most popular cocktail recipes, loved by our community.</p> 
-          </div>
-        </div>
-       </div>
-
+               <button id="popular-btn" class="btn btn-primary">Search</button>
+             </section>
+      </div>
+      <p id="error-message"></p>
+              <div id="drink-results" class="row"></div>
+                <div id="popular-drinks-results" class="row"></div>
+          
+      
         <!-- Featured Cocktails Section -->  
           <section id="featured-cocktails" class="my-5">
             <h2 class="text-center mb-4">Featured Cocktails</h2>
