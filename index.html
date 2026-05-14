@@ -73,19 +73,29 @@
             <img src="assets/images/cocktail-drinks.webp" alt="Colourful cocktail drinks" class="img-fluid">
        </div>
     </section>
-
-    <section id="search">
-            <h2 class="mb-4">Search Cocktails</h2>
+ 
+<!-- Search Section -->
+    <section id="search" class="my-5">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Search Cocktails</h3>
+              <p class="card-text">Find your favorite cocktails by name, ingredient, or flavor profile.</p>
             <form id="search-form">
-                    <input type="text" id="search-input" placeholder="Find your favorite cocktails by name, ingredient, or flavor profile">
+                    <input type="text" id="search-input" placeholder="Search cocktails by name or ingredient">
                     <button type="submit" class="btn btn-primary">Search</button>
             </form>
+          </div>
+        </div>
+      </div>
             
             <p id="error-message"></p>
-            <div id="drink-results" class="row"></div>
-    </section>
+              <div id="drink-results" class="row">
+            </div>
+         </section>
 
      <!-- Popular Drinks Section --> 
+      <section id="popular-drinks" class="my-5">
        <div class="col-md-4 mb-4">
         <div class="card h-100">
           <div class="card-body">
