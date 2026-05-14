@@ -32,6 +32,33 @@
   margin-top: 20px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 15px;
+  padding: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+
+.header-content h1, .header-content p {
+  margin: 0;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text h1, .header-text p {
+  margin: 0;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
