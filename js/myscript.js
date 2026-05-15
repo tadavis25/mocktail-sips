@@ -6,11 +6,15 @@ const drinkResults =
 document.getElementById('drink-results');
 const errorMessage = 
 document.getElementById('error-message');
+
 searchForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const searchValue = searchInput.value.trim();
-    if (!searchValue) {
+    event.preventDefault()
+   const searchValue = searchInput.value.trim();
+   searchInput.value = "";
+   drinkResults.innerHTML = "";
+   errorMessage.textContent = "";
+
+   if (!searchValue) {
         errorMessage.textContent = 'Please enter a cocktail name.';
         drinkResults.innerHTML = '';
         return;
@@ -54,7 +58,13 @@ searchForm.addEventListener('submit', function(event) {
 
 const popularBtn = document.getElementById('popular-btn');
 const popularDrinksResults = document.getElementById('popular-drinks-results');
+
 popularBtn.addEventListener('click', function() {
+    popularDrinksResults.innerHTML = "";
+    drinkResults.innerHTML = "";
+    randomDrinkResult.innerHTML = "";
+    errorMessage.textContent = "";
+    searchInput.value = "";
 
 fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m')
     .then(response => response.json())
@@ -94,7 +104,13 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m')
 
 const randomBtn = document.getElementById('random-btn');
 const randomDrinkResult = document.getElementById('random-drink-result');
+
 randomBtn.addEventListener('click', function() {
+    randomDrinkResult.innerHTML = "";
+    drinkResults.innerHTML = "";
+    popularDrinksResults.innerHTML = "";
+    errorMessage.textContent = "";
+    searchInput.value = "";
 
 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
     .then(response => response.json())
