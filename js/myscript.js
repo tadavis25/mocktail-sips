@@ -83,9 +83,11 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m')
                     </div>
                 `;
             });
-        });
-})
+        })
+
+
     .catch(error => {
-            console.error('Error fetching popular drink data:', error);
-            errorMessage.textContent = 'Error fetching popular drink data.';
+            console.error('Error fetching drink data:', error);
+            errorMessage.textContent = 'Error fetching drink data.';
         });
+});
