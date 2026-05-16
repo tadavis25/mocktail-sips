@@ -5,26 +5,16 @@
 }
 
 /* Hero */
+
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 80px 20px;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-image {
-  flex: 1;
-  text-align: right;
+  padding: 80px 0;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 750px;
+  height: 420px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -59,15 +49,15 @@
   margin: 0;
 }
 
+body {
+  background-color: #e8ffeb;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image {
     text-align: center;
   }
 }
