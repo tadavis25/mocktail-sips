@@ -122,3 +122,31 @@
   width: 400px;
   text-align: center;
 }
+
+/* Media Queries */
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+}
+
+
+/* large devices (laptops and desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Extra extra large devices (large desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+
+}
+
