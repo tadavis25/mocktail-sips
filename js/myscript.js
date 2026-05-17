@@ -11,7 +11,9 @@ searchForm.addEventListener('submit', function(event) {
     event.preventDefault()
    const searchValue = searchInput.value.trim();
    searchInput.value = "";
+   randomDrinkResult.innerHTML = "";
    drinkResults.innerHTML = "";
+   popularDrinksResults.innerHTML = "";
    errorMessage.textContent = "";
 
    if (!searchValue) {
