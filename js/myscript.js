@@ -49,6 +49,7 @@ searchForm.addEventListener('submit', function(event) {
                     </div>
                 `;
             });
+            drinkResults.scrollIntoView({behavior: "smooth"});
         })
         .catch(error => {
             console.error('Error fetching drink data:', error);
@@ -95,6 +96,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m')
                     </div>
                 `;
             });
+            popularDrinksResults.scrollIntoView({behavior: "smooth"});
         })
 
 
@@ -141,6 +143,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
                     </div>
                 `;
             });
+            randomDrinkResult.scrollIntoView({behavior: "smooth"});
         })
 
 
