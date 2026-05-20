@@ -6,12 +6,13 @@ h1, h2, h3, h5 {
   font-family: "Prata", serif;
 }
 
-p {
+.p {
   font-family: "Poppins", sans-serif;
 }
 .navbar {
     background-color: #c7db63 !important;
     padding: 10px;
+    font-size: 20px;
 }
 
 /* Hero */
@@ -27,6 +28,7 @@ p {
   object-fit: cover;
   border-radius: 8px;
   margin-top: 30px;
+  border: 10px solid #c7db63;
 }
 
 .hero-buttons {
@@ -46,6 +48,16 @@ p {
   height: auto;
 }
 
+#random-drink-result {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#random-drink-result .card {
+  width: 100%;
+  max-width: 400px;
+}
 
 .header-content h1, .header-content p {
   margin: 0;
@@ -122,6 +134,12 @@ body {
   padding: 25px;
   width: 400px;
   text-align: center;
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 /* Media Queries */

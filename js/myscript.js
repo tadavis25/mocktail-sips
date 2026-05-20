@@ -36,14 +36,14 @@ searchForm.addEventListener('submit', function(event) {
                 class="card-img-top">
                      
                     <div class="card-body">
-                      <h5>${drink.strDrink}</h5>
+                      <h5><strong>${drink.strDrink}</strong></h5>
                         <p>${drink.strInstructions.slice(0, 200)}...</p>
                         <p><strong>Glass:</strong> ${drink.strGlass}</p>
                           <p><strong>Category:</strong> ${drink.strCategory}</p>
 
-                          <p>${drink.strIngredient1}</p>
-                           <p>${drink.strIngredient2}</p>
-                             <p>${drink.strIngredient3}</p>
+                          <p>${drink.strMeasure1 || ''} ${drink.strIngredient1 || ''}</p>
+                           <p>${drink.strMeasure2 || ''} ${drink.strIngredient2 || ''}</p>
+                             <p>${drink.strMeasure3 || ''} ${drink.strIngredient3 || ''}</p>
                            </div>
                         </div>
                     </div>
@@ -83,14 +83,14 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m')
                 class="card-img-top">
                      
                     <div class="card-body">
-                      <h5>${drink.strDrink}</h5>
+                      <h5><strong>${drink.strDrink}</strong></h5>
                         <p>${drink.strInstructions.slice(0, 200)}...</p>
                         <p><strong>Glass:</strong> ${drink.strGlass}</p>
                           <p><strong>Category:</strong> ${drink.strCategory}</p>
 
-                          <p>${drink.strIngredient1}</p>
-                           <p>${drink.strIngredient2}</p>
-                             <p>${drink.strIngredient3}</p>
+                          <p>${drink.strMeasure1 || ''} ${drink.strIngredient1 || ''}</p>
+                           <p>${drink.strMeasure2 || ''} ${drink.strIngredient2 || ''}</p>
+                             <p>${drink.strMeasure3 || ''} ${drink.strIngredient3 || ''}</p>
                            </div>
                         </div>
                     </div>
@@ -130,14 +130,14 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
                 class="card-img-top">
                      
                     <div class="card-body">
-                      <h5>${drink.strDrink}</h5>
+                      <h5><strong>${drink.strDrink}</strong></h5>
                         <p>${drink.strInstructions.slice(0, 200)}...</p>
                         <p><strong>Glass:</strong> ${drink.strGlass}</p>
                           <p><strong>Category:</strong> ${drink.strCategory}</p>
 
-                          <p>${drink.strIngredient1}</p>
-                           <p>${drink.strIngredient2}</p>
-                             <p>${drink.strIngredient3}</p>
+                          <p>${drink.strMeasure1 || ''} ${drink.strIngredient1 || ''}</p>
+                           <p>${drink.strMeasure2 || ''} ${drink.strIngredient2 || ''}</p>
+                             <p>${drink.strMeasure3 || ''} ${drink.strIngredient3 || ''}</p>
                            </div>
                         </div>
                     </div>
