@@ -142,6 +142,22 @@ body {
     text-align: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+color: #2f2f2f;
+}
+.social-links a {
+  color: #2f2f2f;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {  
+color: #c7db63;
+}
+
 /* Media Queries */
 
 /* Media query: large or landscape phones (576px and up) */
